@@ -1,149 +1,454 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>Trabalho CSS</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Faz o site funcionar corretamente em celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfólio pessoal de Luiz Theodoro">
+
+    <title>Luiz Theodoro | Portfólio</title>
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Trabalho de CSS - Camadas de Aprendizado</h1>
-</header>
+    <!-- ================= HEADER ================= -->
+    <header>
 
-<section>
-    <h2>Camada 1 – Conceitos Básicos</h2>
+        <nav class="navbar">
 
-    <p><strong>CSS:</strong> Cascading Style Sheets (Folhas de Estilo em Cascata).</p>
+            <div class="logo">
+                Luiz<span>.</span>
+            </div>
 
-    <p><strong>Função:</strong> O CSS serve para estilizar páginas web, mudando cores, tamanhos, posições e aparência geral.</p>
+            <!-- Botão do menu no celular -->
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
 
-    <p><strong>HTML vs CSS:</strong> HTML estrutura o conteúdo, enquanto o CSS estiliza esse conteúdo.</p>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-    <p><strong>Formas de usar CSS:</strong></p>
-    <ul>
-        <li>Inline (dentro da tag)</li>
-        <li>Interno (na tag style)</li>
-        <li>Externo (arquivo .css separado)</li>
-    </ul>
-</section>
+        </nav>
 
-<section>
-    <h2>Camada 2 – Propriedades CSS</h2>
+    </header>
 
-    <table>
-        <tr>
-            <th>Propriedade</th>
-            <th>Significado</th>
-            <th>Exemplo</th>
-        </tr>
 
-        <tr>
-            <td>color</td>
-            <td>Define a cor do texto</td>
-            <td>color: red;</td>
-        </tr>
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main>
 
-        <tr>
-            <td>background-color</td>
-            <td>Define cor de fundo</td>
-            <td>background-color: blue;</td>
-        </tr>
+        <!-- ================= INÍCIO ================= -->
+        <section id="inicio" class="hero">
 
-        <tr>
-            <td>font-size</td>
-            <td>Tamanho da fonte</td>
-            <td>font-size: 18px;</td>
-        </tr>
+            <div class="hero-text">
 
-        <tr>
-            <td>font-family</td>
-            <td>Tipo da fonte</td>
-            <td>font-family: Arial;</td>
-        </tr>
+                <p class="hello">Olá, eu sou</p>
 
-        <tr>
-            <td>text-align</td>
-            <td>Alinhamento do texto</td>
-            <td>text-align: center;</td>
-        </tr>
+                <h1>Luiz Theodoro</h1>
 
-        <tr>
-            <td>width</td>
-            <td>Largura</td>
-            <td>width: 300px;</td>
-        </tr>
+                <h2>Futuro Desenvolvedor Web</h2>
 
-        <tr>
-            <td>height</td>
-            <td>Altura</td>
-            <td>height: 200px;</td>
-        </tr>
+                <p>
+                    Sou estudante e estou desenvolvendo meus conhecimentos
+                    na área de tecnologia e programação. Tenho interesse
+                    em desenvolvimento web e busco aprender cada vez mais
+                    sobre HTML, CSS, JavaScript, Git e GitHub.
+                </p>
 
-        <tr>
-            <td>border</td>
-            <td>Borda do elemento</td>
-            <td>border: 1px solid black;</td>
-        </tr>
+                <div class="buttons">
 
-        <tr>
-            <td>margin</td>
-            <td>Espaço externo</td>
-            <td>margin: 10px;</td>
-        </tr>
+                    <a href="#projetos" class="btn">
+                        Ver projetos
+                    </a>
 
-        <tr>
-            <td>padding</td>
-            <td>Espaço interno</td>
-            <td>padding: 10px;</td>
-        </tr>
-    </table>
-</section>
+                    <a href="#contato" class="btn btn-outline">
+                        Entre em contato
+                    </a>
 
-<section>
-    <h2>Camada 3 – Organização e Layout</h2>
+                </div>
 
-    <p><strong>Seletor CSS:</strong> É o elemento que escolhe qual parte do HTML será estilizada.</p>
+            </div>
 
-    <p><strong>Class:</strong> Serve para aplicar estilos em vários elementos.</p>
+            <div class="hero-image">
 
-    <p><strong>ID:</strong> Serve para identificar um único elemento.</p>
+                <!-- Coloque sua foto dentro da pasta img -->
+                <img src="img/perfil.jpg" alt="Foto de Luiz Theodoro">
 
-    <p><strong>Diferença:</strong> Class pode repetir, ID é único.</p>
+            </div>
 
-    <p><strong>Box Model:</strong> Modelo que define margem, borda, padding e conteúdo.</p>
-</section>
+        </section>
 
-<section>
-    <h2>Camada 4 – Acessibilidade</h2>
 
-    <p>O CSS ajuda pessoas com deficiência visual ao melhorar contraste e legibilidade.</p>
+        <!-- ================= SOBRE MIM ================= -->
+        <section id="sobre" class="section">
 
-    <p>O contraste é importante para facilitar a leitura.</p>
+            <h2 class="section-title">Sobre Mim</h2>
 
-    <p>Fontes grandes ajudam na leitura e acessibilidade.</p>
+            <div class="about">
 
-    <ul>
-        <li>Usar bom contraste</li>
-        <li>Usar tamanhos de fonte legíveis</li>
-    </ul>
-</section>
+                <div class="about-icon">
+                    <i class="fas fa-user"></i>
+                </div>
 
-<section>
-    <h2>Desafio Extra</h2>
+                <div>
 
-    <h3>Exemplo de página simples</h3>
+                    <p>
+                        Meu nome é Luiz Theodoro e sou estudante interessado
+                        na área de tecnologia e desenvolvimento de sistemas.
+                    </p>
 
-    <img src="https://via.placeholder.com/300" alt="Imagem exemplo">
+                    <p>
+                        Meu objetivo profissional é trabalhar na área de
+                        desenvolvimento de software e continuar evoluindo
+                        minhas habilidades.
+                    </p>
 
-    <p>Este é um parágrafo estilizado com CSS.</p>
+                    <p>
+                        Tenho interesse principalmente em desenvolvimento
+                        web, criação de sites e aplicações.
+                    </p>
 
-</section>
+                    <p>
+                        Atualmente estou estudando HTML, CSS e JavaScript,
+                        além de ferramentas como Git e GitHub.
+                    </p>
 
-<footer>
-    <p>Feito por: Seu Nome</p>
-</footer>
+                    <p>
+                        Pretendo aprender novas linguagens e tecnologias
+                        para me tornar um desenvolvedor cada vez mais
+                        preparado para o mercado de trabalho.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HABILIDADES ================= -->
+        <section id="habilidades" class="section section-dark">
+
+            <h2 class="section-title">Minhas Habilidades</h2>
+
+            <div class="skills">
+
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Estruturação de páginas web.</p>
+                    <div class="progress">
+                        <div class="progress-bar html"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Estilização e criação de layouts.</p>
+                    <div class="progress">
+                        <div class="progress-bar css"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e funcionalidades.</p>
+                    <div class="progress">
+                        <div class="progress-bar javascript"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Conhecimentos básicos de programação.</p>
+                    <div class="progress">
+                        <div class="progress-bar python"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Controle de versões.</p>
+                    <div class="progress">
+                        <div class="progress-bar git"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Hospedagem e compartilhamento de projetos.</p>
+                    <div class="progress">
+                        <div class="progress-bar github"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJETOS ================= -->
+        <section id="projetos" class="section">
+
+            <h2 class="section-title">Meus Projetos</h2>
+
+            <div class="projects">
+
+                <!-- Projeto 1 -->
+                <article class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Meu Primeiro Site</h3>
+
+                        <p>
+                            Projeto desenvolvido para praticar a criação
+                            de páginas utilizando HTML e CSS.
+                        </p>
+
+                        <p class="technologies">
+                            HTML5 • CSS3
+                        </p>
+
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Projeto 2 -->
+                <article class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Calculadora</h3>
+
+                        <p>
+                            Calculadora desenvolvida para praticar
+                            lógica de programação e JavaScript.
+                        </p>
+
+                        <p class="technologies">
+                            HTML5 • CSS3 • JavaScript
+                        </p>
+
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Projeto 3 -->
+                <article class="project-card">
+
+                    <div class="project-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Lista de Tarefas</h3>
+
+                        <p>
+                            Aplicação simples para adicionar e organizar
+                            tarefas utilizando JavaScript.
+                        </p>
+
+                        <p class="technologies">
+                            HTML5 • CSS3 • JavaScript
+                        </p>
+
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORMAÇÃO ================= -->
+        <section id="formacao" class="section section-dark">
+
+            <h2 class="section-title">Formação</h2>
+
+            <div class="education">
+
+                <div class="education-card">
+
+                    <i class="fas fa-graduation-cap"></i>
+
+                    <h3>Formação Escolar</h3>
+
+                    <p>
+                        <strong>Escola:</strong>
+                        Coloque aqui o nome da sua escola.
+                    </p>
+
+                    <p>
+                        <strong>Curso:</strong>
+                        Coloque aqui seu curso.
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <i class="fas fa-book"></i>
+
+                    <h3>Cursos Extras</h3>
+
+                    <p>
+                        Adicione aqui cursos, certificados ou outras
+                        formações que você possui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTATO ================= -->
+        <section id="contato" class="section">
+
+            <h2 class="section-title">Entre em Contato</h2>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>Vamos conversar?</h3>
+
+                    <p>
+                        Caso queira entrar em contato comigo, utilize
+                        uma das opções abaixo.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>luiztheodoro37@gmail.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+55 (41) 98743-8848</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Paraná, Brasil</span>
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Formulário apenas visual -->
+                <form class="contact-form" id="contact-form">
+
+                    <input
+                        type="text"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
+
+                    <textarea
+                        rows="6"
+                        placeholder="Sua mensagem"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer>
+
+        <p>
+            © 2026 Luiz Theodoro. Todos os direitos reservados.
+        </p>
+
+        <p>
+            Desenvolvido com HTML, CSS e JavaScript.
+        </p>
+
+    </footer>
+
+
+    <!-- Arquivo JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
